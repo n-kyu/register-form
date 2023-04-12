@@ -24,14 +24,28 @@
             <h2>Login</h2>
             <form action="#">
                 <div class="input-box">
-                    <span class="icon"></span>
+                    <span class="form-icons">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </span>
                     <input type="email" required>
                     <label>Email</label>
                 </div>
                 <div class="input-box">
-                    <span class="icon"></span>
+                    <span class="icon">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                    </span>
                     <input type="password" required>
                     <label>Password</label>
+                </div>
+                <div class="form-remember">
+                     <label><input type="checkbox">Remember me</label>
+                     <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="form-loginBtn">Login</button>
+                <div class="form-register">
+                    <p>Don't have an account?
+                        <a href="#" class="register-link">Register</a>
+                    </p>
                 </div>
             </form>
         </div>
