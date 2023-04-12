@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header class="flex align-items">
-        <img src="assets/img/logo.svg" class="logo"/>
+    <header class="flex align-center">
+        <div class="flex align-center"><img src="assets/img/logo.svg" class="logo"/><span class="logo-name">NIHON</span></div>
             <nav>
                 <a href="#">Home</a>
                 <a href="#">About</a>
@@ -18,7 +18,23 @@
                 <button class="loginBtn-popup">Login</button>
             </nav>
     </header>
-    
-    <script src="assets/js/script.js"></script>
+
+    <div class="wrapper">
+        <div class="form login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
