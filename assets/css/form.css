@@ -1,0 +1,173 @@
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(20, 200, 198, .5);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px black;
+    overflow: hidden;
+    transition: transform .5s ease, height .2s ease;
+
+    transform: scale(0);
+}
+
+.wrapper.active-popup {
+    transform: scale(1);
+}
+
+.wrapper.active {
+    height: 520px;
+}
+
+.close-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 2.5em;
+    background-color: rgba(20, 200, 198, .5);
+    color: var(--color-alice);
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.form-layout {
+    width: 100%;
+    padding: 40px;
+}
+
+.form-layout h2 {
+    font-size: 2.2em;
+    color: var(--color-alice);
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid;
+    color: var(--color-alice);
+    margin: 20px 0;
+}
+
+.form-Btn {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: 1px solid whitesmoke;
+    color: var(--color-alice);
+    border-radius: 8px;
+    transition: .5s;
+    cursor: pointer;
+    font-weight: 600;
+}
+.form-Btn:hover {
+    background-color: var(--color-alice);
+    color: rgb(5, 3, 30);
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: var(--color-alice);
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: 5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--color-alice);
+    font-weight: 600;
+    padding: 0 40px 0 5px;
+}
+
+.form-icons {
+    color: var(--color-alice);
+    font-size: 1.3em;
+    position: absolute;
+    right: 8px;
+    line-height: 57px;
+}
+
+.form-remember {
+    flex-direction: column;
+    font-size: .9em;
+    color: var(--color-alice);
+    margin: -5px 0 15px 0;
+}
+
+.form-remember label input {
+    accent-color: rgb(145, 78, 20);
+    margin-right: 5px;
+}
+
+.form-remember a {
+    font-size: .8em;
+    margin-top: 5px;
+    text-decoration: none;
+    color: var(--color-alice);
+
+}
+.form-remember a:hover {
+    text-decoration: underline;
+}
+
+/* Style for login */
+
+.wrapper.active .form-layout.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.login {
+    transition: transform .22s ease;
+    transform: translateX(0);
+}
+
+.form-register {
+    font-size: .9em;
+    color: var(--color-alice);
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.register-link, .login-link {
+    text-decoration: none;
+    color: var(--color-alice);
+    font-weight: 600;
+    font-size: .9em;
+}
+
+.register-link:hover, .login-link:hover {
+    text-decoration: underline;
+}
+
+/* Style for register */
+
+.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-layout.register {
+    position: absolute;
+    transition: transform .22s ease;
+    transform: translateX(0);
+}
