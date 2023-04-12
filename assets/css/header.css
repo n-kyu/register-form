@@ -8,3 +8,52 @@ header {
     z-index: 99;
     background: blue;
 }
+
+.logo {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+}
+
+nav a {
+    position: relative;
+    font-size: 1.1em;
+    color: aliceblue;
+    text-decoration: none;
+    margin-left: 40px;
+}
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 6px;
+    transform: scaleX(0);
+    transition: .4s;
+    transform-origin: right;
+}
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.loginBtn-popup {
+    width: 120px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: aliceblue;
+    margin-left: 40px;
+    outline: none;
+    border-radius: 12px;
+    transition: .5s;
+}
+.loginBtn-popup:hover {
+    background-color: white;
+    color: rgb(5, 3, 30);
+
+}
