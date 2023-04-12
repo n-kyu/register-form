@@ -1,7 +1,11 @@
 @import url(header.css);
+@import url(form.css);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
 
+:root {
+    --color-alice: aliceblue ;
+}
 
 * {
     margin: 0;
@@ -16,6 +20,14 @@
 
 .align-center {
     align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.justify-center {
+    justify-content: center;
 }
 
 body {
