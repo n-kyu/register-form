@@ -6,13 +6,20 @@ header {
     padding: 20px 100px;
     justify-content: space-between;
     z-index: 99;
-    background: blue;
 }
 
 .logo {
     width: 80px;
     height: auto;
     cursor: pointer;
+}
+
+.logo-name {
+    margin-left: 5px;
+    color: aliceblue;
+    font-size: 2em;
+    letter-spacing: 3px;
+    font-family: 'Sedgwick Ave Display', cursive;
 }
 
 nav a {
