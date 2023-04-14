@@ -85,7 +85,6 @@ nav a:hover::after {
 @media screen and (max-width: 669px ) {
     header {
         flex-direction: column;
-
     }
 
     nav {
@@ -99,4 +98,11 @@ nav a:hover::after {
     .loginBtn-popup {
         margin-left: 0;
     }
+}
+
+@media screen and (max-width: 400px ) { 
+    header {
+        z-index: 0;
+    }
+
 }
