@@ -183,6 +183,13 @@
     .form-layout {
         padding: 40px;
     }
+
+    .wrapper.active .form-layout.register {
+        margin-top: 50px;
+        position: absolute;
+        transition: transform .22s ease;
+        transform: translateX(0);
+    }
 }
 
 @media screen and (max-width: 350px) {
