@@ -1,5 +1,4 @@
 .wrapper {
-    margin-top: 50px;
     position: relative;
     width: 400px;
     height: 440px;
@@ -176,6 +175,7 @@
 /* responsive layout */
 @media screen and (max-width: 420px) {
     .wrapper {
+        margin-top: 60px;
         width: auto;
         height: auto;
     }
