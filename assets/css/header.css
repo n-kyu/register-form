@@ -64,3 +64,35 @@ nav a:hover::after {
     color: rgb(5, 3, 30);
 
 }
+
+/* responsive layout */
+@media screen and (max-width: 960px ) {
+    Header {
+        padding: 20px;
+        justify-content: space-evenly;
+    }
+
+    nav a {
+        margin-left: 15px;
+    }
+
+    .loginBtn-popup {
+        margin-left: 15px;
+    }
+}
+
+
+@media screen and (max-width: 669px ) {
+    header {
+        flex-direction: column;
+
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    nav a {
+        display: none;
+    }
+}

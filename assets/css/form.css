@@ -171,3 +171,21 @@
     transition: transform .22s ease;
     transform: translateX(0);
 }
+
+/* responsive layout */
+@media screen and (max-width: 420px) {
+    .wrapper {
+        width: auto;
+        height: auto;
+    }
+
+    .form-layout {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .form-layout {
+        padding: 25px;
+    }
+}
