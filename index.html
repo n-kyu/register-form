@@ -59,13 +59,14 @@
 
         <div class="form-layout register">
             <h2 class="text-center">Register</h2>
-            <form action="#">
+            <form id="form" action="#">
                 <div class="input-box">
                     <span class="form-icons">
                         <ion-icon name="person-outline"></ion-icon>
                     </span>
-                    <input type="text" required>
-                    <label>Username</label>
+                    <input type="text" name="name" id="name">
+                    <label for="name">Username</label>
+                    <div id="error"></div>
                 </div>
                 <div class="input-box">
                     <span class="form-icons">

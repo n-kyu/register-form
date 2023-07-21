@@ -23,3 +23,10 @@ registerLink.addEventListener("click", () => {
 loginLink.addEventListener("click", () => {
     wrapper.classList.remove("active");
 });
+
+const name = document.getElementById("name");
+const form = document.getElementById("form");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+});
